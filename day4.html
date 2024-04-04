@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            background-color: aqua;
+            width: 100%;
+
+        }
+
+        #heading {
+            color: blue;
+            border: 5px;
+            border-style: ridge;
+
+            background-color:antiquewhite;
+           text-align: center;
+
+        }
+
+        .main {
+            border: 5px;
+            border-style: ridge;
+            width: 30%;
+            text-align: center;
+            background-color: cadetblue;
+            
+
+
+        }
+        #submain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        } 
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="main">
+        <h1 id="heading">Play With Guess </h1>
+
+ <div id="submain">
+
+        <input type="number" id="num" onkeypress="playSound()" placeholder="Enter your number ">
+        <button onclick="get_num()">Match</button><br>
+        <div id="correct" style="display: none;"> Your guess is right . </div>
+        <div id="incorrect" style="display: none;"> Sorry! Try again</div>
+
+
+    </div>
+
+
+
+       
+        <script src="script.js"></script>
+    </div>
+</div>
+</body>
+
+</html>
